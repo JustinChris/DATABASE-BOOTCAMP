@@ -1,0 +1,29 @@
+Elements of ERD:
+- Entitiy: a person, place, event, or object relevant to the system
+- Attribute: Property of the entity
+- Relationship: a line that used to describe the relation between two or more entity.
+
+nah di sini kalian bakal tau kenapa dari sem 1 aku ajarin char x[255]
+simpelny karna varchar nampung max 255 karakter, jadi conventionny aku terapin di c jga
+
+
+kalo garis = 1
+bulet = 0
+garis tiga = many -> punya 1 to many
+
+
+Primary Key = bentuk kunci -> yang bikin setiap row di table unik -> misalnya NIM mahasiswa
+panah ijo = foreign key -> yang ngehubungin satu table dengan table lainnya -> kode daerah mahasiswa misalnya JKT
+
+PK -> Yang bikin dia unik
+FK -> Dia minjem data yang PK nya == FK -> ibarat pointer, nunjuk ke PK table lain.
+composite -> satu table ada 2 primary key
+Compound -> satu table ada PK dan FK
+
+Primary Key:
+- No limitations in inserting
+- Uniquely identify table
+- must not be null
+- table can only have one
+Foreign Key:
+- 

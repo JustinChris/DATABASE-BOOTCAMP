@@ -1,0 +1,30 @@
+SELECT: specify column
+FROM: Specify table
+WHERE: Filter Row
+GROUP BY: Group rows with common feature
+HAVING: Filter group of row
+ORDER BY: sorting [ASC|DESC]
+
+DDL
+Data Definition Language, used to define database schema. Creates and modifies database objects
+Ex: CREATE= Create a database object, DROP = Delete an object, ALTER = Alter/modify object
+
+CREATE TABLE table_name(
+	ColumnName datatype [Constraint],
+)
+
+Constraints:
+- Primary Key: Assigns one or more column as primary key
+- Foreign Key: Assigns a columns as foreign key
+- Check: set a rule for inserting
+- UNIQUE: set column value must be unique
+- DEFAULT: set default value of column
+- NOT NULL: set column must not be null
+
+CHAR ukuran dah pasti
+VARCHAR ukuran belom pasti
+
+How To Maintain Referential Integrity:
+- ON UPDATE [CASCADE | SET NULL | SET DEFAULT]
+- ON DELETE [CASCADE | SET NULL | SET DEFAULT]
+- Used on foreign key
