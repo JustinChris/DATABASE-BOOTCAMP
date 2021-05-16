@@ -1,0 +1,54 @@
+Cara menggunakan "count":
+	Select COUNT(*) As myCount
+	From PropertyForRent
+	WHERE rent > 350;
+Cara menggunakan "MIN", "MAX", "AVG"
+	SELECT MIN(salary) AS myMin,
+	MAX(salary) AS myMax,
+	AVG(salary) AS myAvg
+	FROM Staf
+
+GROUPING
+- Grouping uses group by
+- Groups rows with the same value
+- Grouping is done after WHERE (if where is specified)
+- Grouping is often used with aggregate functions
+- If group by is used SELECT must only contain:
+	- Constant
+	- Aggregate Function
+	- Column name that appeared in GROUP BY
+
+GROUP BY
+ Find Number of staff in each branch and their total salaries
+	SELECT branchNo,
+		COUNT(staffNo) AS myCount,
+		SUM(salary) AS mySum
+	FROM Staff
+	GROUP BY branchNo
+	ORDER BY branchNo;
+
+HAVING DAN WHERE
+HAVING = Mencari sesuatu yang sudah di group by
+WHERE = Mencari sesuatu dari yang belum di group by
+
+String Function
+- LEFT (value, length)
+- RIGHT (value, length)
+- SUBSTRING (value, start, length)
+- CHARINDEX (string, value[,start])
+- STUFF (value, start, length, string to replace)
+- REPLACE (value, string1, string2)
+- CAST (expression AS dataype)
+- CONVERT (datatype[(length)], expression [,format])
+- LTRIM (value)
+- RTRIM (value)
+- LOWER (value)
+- UPPER (value)
+- LEN (value)
+- REVERSE (value)
+
+Date Functions
+yyyy-mm-dd
+- DATENAME (datepart, value)
+- DATEPART (datepart, value)
+- DATEDIFF (datepart, start, value)
